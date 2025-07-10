@@ -1,0 +1,128 @@
+/* Client Reviews Section */
+.client-reviews {
+    padding: 10% 0;
+    background-image: url('../img/dotted-globe.webp');
+    background-size: cover;        
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .review-container {
+    display: flex;
+    gap: 60px;
+  }
+  
+  .review-header {
+    flex: 1;
+  }
+  
+  .review-slider {
+    flex: 1;
+    position: relative;
+  }
+  
+  /* Review Cards */
+  .review-card {
+    padding: 40px;
+    display: none;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  .review-card.active {
+    display: block;
+  }
+  
+  .review-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #000;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .client-info {
+    border-left: 0;
+    padding-left: 0;
+  }
+  
+  .client-name {
+    font-weight: 700;
+    color: #010535;
+    margin-bottom: 5px;
+  }
+  
+  .client-designation {
+    color: #64748b;
+    font-size: 0.9rem;
+  }
+  
+  /* Slider Controls */
+  .slider-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
+  }
+  
+  .slider-prev,
+  .slider-next {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #4a6cf7;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .slider-prev:hover,
+  .slider-next:hover {
+    transform: scale(1.2);
+  }
+  
+  .slider-dots {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #2954B7;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .dot.active {
+    background: linear-gradient(to right, #DB403F, #2954B7);
+    transform: scale(1.2);
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Responsive */
+  @media (max-width: 992px) {
+    .review-container {
+      flex-direction: column;
+      gap: 40px;
+    }
+    
+    .review-slider {
+      margin-top: 30px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .review-card {
+      padding: 30px;
+    }
+    
+    .review-text {
+      font-size: 1rem;
+    }
+  }

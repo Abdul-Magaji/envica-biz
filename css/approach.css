@@ -1,0 +1,187 @@
+/* CSS Styling */
+.approach-section {
+    padding: 100px 0;
+    background: #f9f9f9;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 120px;
+  }
+  
+  /* Image Frames */
+  .approach-images {
+    position: relative;
+    width: 45%;
+    min-height: 400px;
+  }
+  
+  .approach-image-frame {
+    position: absolute;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  }
+  
+  .img-1 {
+    width: 70%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .img-2 {
+    width: 65%;
+    bottom: -20%;
+    right: 0;
+    z-index: 2;
+  }
+  
+  .approach-image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Content Block */
+  .about-content {
+    width: 50%;
+  }
+
+  .gradient-text {
+    background: linear-gradient(to right, #DB403F, #2954B7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .custom-li::marker {
+    color: #DB403F; /* bullet color */
+    width: 100px;
+    height: 100px;
+  }
+  
+  .custom-li {
+    color: black; /* text color */
+  }
+  
+  /* Features */
+  .features {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 40px;
+  }
+
+  .steps-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .core-items {
+    display: flex;
+    gap: 20px;
+    padding: 25px 0;
+    transition: all 0.3s ease;
+  }
+
+  .core-content {
+    flex: 1;
+    gap: 20px;
+  }
+  
+  .core-title {
+    font-size: 1.3rem;
+    color: #010535;
+    margin-bottom: 10px;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+  
+  .core-description {
+    color: #858585;
+    font-size: 1em;
+    line-height: 1.6;
+    font-weight: 400;
+  }  
+  
+  /* Responsive */
+  @media (max-width: 992px) {
+    .container {
+      flex-direction: column;
+    }
+    
+    .about-images, 
+    .about-content {
+      width: 100%;
+    }
+
+    .process-content {
+        flex-direction: column;
+      }
+      
+      .process-image {
+        order: -1;
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 40px;
+      }
+    }
+    
+    @media (max-width: 992px) {
+      .container {
+        flex-direction: column;
+        gap: 60px;
+        padding: 0 20px;
+      }
+    
+      .approach-images,
+      .about-content {
+        width: 100%;
+        min-height: auto;
+      }
+    
+      .approach-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        min-height: 350px;
+      }
+    
+      .img-1, .img-2 {
+        position: absolute;
+      }
+    
+      .features {
+        flex-direction: column;
+        gap: 30px;
+      }
+    
+      .core-items {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+      }
+    
+      .core-content {
+        gap: 10px;
+      }
+    
+      .core-title {
+        font-size: 1.1rem;
+      }
+    
+      .core-description {
+        font-size: 0.95em;
+      }
+    }
+    

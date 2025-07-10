@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Envica: Build Smarter">
+  <title>Envica | Build Smarter</title>
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/aboutus.css">
+  <link rel="styLesheet" href="css/howwework.css">
+  <link rel="styLesheet" href="css/approach.css">
+  <link rel="styLesheet" href="contactpage.css">
+  <link rel="styLesheet" href="css/testimonials.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggleBtn = document.querySelector('.mobile-menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+  
+      toggleBtn.addEventListener('click', function () {
+        navLinks.classList.toggle('active');
+        const expanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+        toggleBtn.setAttribute('aria-expanded', !expanded);
+      });
+    });
+  </script>
+
+  <!-- Notification Banner -->
+  <div class="banner">
+    <div class="banner-container">
+      <div class="banner-left">
+        <div class="contact-item">
+          <img src="assets/email.svg" alt="Email Icon" width="20" height="20">
+          <a href="mailto:hellooo@envica.biz">hellooo@envica.biz</a>
+        </div>
+        <div class="contact-item">
+          <img src="assets/phone.svg" alt="Phone Icon" width="20" height="20">
+          <a href="tel:+1234567890">+123 456 7890</a>
+        </div>
+      </div>
+
+      <div class="banner-right">
+        <a href="https://www.instagram.com/envica.ltd" target="_blank" aria-label="instagram"><img src="assets/insta.svg" alt="instagram link" width="20" height="20"></a>
+        <a href="https://web.facebook.com/people/ENVICA/61574116547594/?mibextid=LQQJ4d" target="_blank" aria-label="Facebook"><img src="assets/facebook.svg" alt="facebook link" width="20" height="20"></a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><img src="assets/linkedin.svg" alt="linkedin link" width="20" height="20"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="assets/envicaLogo1.png" alt="Envica Logo" width="150">
+      </a>
+
+      <nav class="navbar">
+        <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#services">product</a></li>
+          <li><a href="#process">Solutions</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+
+      <a href="contact.html" class="cta-button-primary">Get Started</a>
+    </div>
+  </header>
+
+  <!-- Title -->
+  <section class="page-title-card">
+    <div class="title-overlay"></div>
+    <div class="container">
+      <h1>Contact Us</h1>
+    </div>
+    
+  </section>
+
+  <!-- Form -->
+  <section class="contact-form-section">
+    <div class="contact-container">
+      <div class="contact-grid">
+        <!-- Left Column - Form -->
+        <div class="form-column">
+          <li class="custom-li">Contact Us</li>
+          <h2 class="section-title">Get in touch with us</h2>
+
+          <form action="" class="contact-form">
+            <div class="name-fields">
+              <div class="form-group">
+                <input type="text" id="firstName" required>
+                <label for="firstName">First Name</label>
+              </div>
+              <div class="form-group">
+                <input type="text" id="lastName" required>
+                <label for="lastName">Last Name</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input type="tel" id="phone" required>
+              <label for="phone">Enter your mobile no.</label>
+            </div>
+            
+            <div class="form-group">
+              <input type="email" id="email" required>
+              <label for="email">Enter your e-mail</label>
+            </div>
+            
+            <div class="form-group">
+              <textarea id="message" rows="5" required></textarea>
+              <label for="message">Write message...</label>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+        
+        <!-- Right Column - Image -->
+        <div class="image-column">
+          <img src="img/about-img-2.webp" alt="Contact us" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+
+    <!-- Top Content Section -->
+    <div class="footer-content">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Left Container - Company Info -->
+          <div class="footer-company">
+            <img src="assets/envicaLogo-white.png" alt="Envica Logo" class="footer-logo">
+            <p class="company-description">
+              Empowering businesses with innovative solutions since 1998.
+            </p>
+            <div class="social-links">
+              <a href="https://www.instagram.com/envica.ltd" target="_blank" aria-label="instagram"><img src="assets/insta.svg" alt="instagram link" width="20" height="20"></a>
+              <a href="https://web.facebook.com/people/ENVICA/61574116547594/?mibextid=LQQJ4d" target="_blank" aria-label="Facebook"><img src="assets/facebook.svg" alt="facebook link" width="20" height="20"></a>
+              <a href="https://linkedin.com/company/yourcompany" target="_blank" aria-label="LinkedIn"><img src="assets/linkedin.svg" alt="linkedin link" width="20" height="20"></a>
+            </div>
+          </div>
+  
+          <!-- Right Container - Two Columns -->
+          <div class="footer-links">
+            <!-- Quick Links Column -->
+            <div class="links-column">
+              <h3 class="footer-heading">Quick Links</h3>
+              <ul>
+                <li><a href="#index">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#values">Core Values</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+  
+            <!-- Services Column -->
+            <div class="links-column">
+              <h3 class="footer-heading">Services</h3>
+              <ul>
+                <li><a href="#">Memberships</a></li>
+                <li><a href="#">Webiners</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Campaigns</a></li>
+                <li><a href="#">Training Programs</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container"><hr class="footer-divider"></div>
+  
+    <!-- Middle section -->
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="bottom-content">
+          <img src="assets/envicaLogo-white.png" alt="Envica" class="bottom-logo">
+          <div class="legal-links">
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container"><hr class="footer-divider"></div>
+  
+    <!-- Bottom Footer Links -->
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="bottom-content">
+          <div class="copyright">
+            &copy; <span id="current-year"></span> Envica. All rights reserved.
+          </div>
+
+          <div class="legal-links">
+            <a href="#">Go to top</a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Dynamic year for footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    menuToggle.addEventListener('click', () => {
+      const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', !isExpanded);
+      navLinks.style.display = isExpanded ? 'none' : 'flex';
+    });
+  </script>
+</body>
+</html>

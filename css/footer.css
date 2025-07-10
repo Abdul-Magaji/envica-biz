@@ -1,0 +1,181 @@
+/* Footer Styles */
+.site-footer {
+    background-image: url('../img/footer-bg.webp');
+    background-size: cover;        
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .footer-content {
+    padding: 80px 0;
+  }
+  
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 8%;
+  }
+  
+  .footer-grid {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  /* Left Container - Company Info */
+  .footer-company {
+    max-width: 350px;
+  }
+  
+  .footer-logo {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .company-description {
+    color: rgba(255, 255, 255);
+    margin-bottom: 25px;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-links a:hover {
+    background: #4a6cf7;
+    transform: translateY(-3px);
+  }
+  
+  .social-links span {
+    display: none; /* For screen readers */
+  }
+  
+  /* Right Container - Links */
+  .footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .links-column h3 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  
+  .links-column ul {
+    list-style: none;
+  }
+  
+  .links-column li {
+    margin-bottom: 12px;
+  }
+  
+  .links-column a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .links-column a:hover {
+    color: #DB403F;
+    padding-left: 5px;
+  }
+  
+  /* Divider */
+  .footer-divider {
+    height: 1px;
+    border-color: #cfcfcf3a;
+    justify-self: center;
+    width: 100%;
+  }
+  
+  /* Bottom Footer */
+  .footer-bottom {
+    padding: 25px 0;
+  }
+  
+  .bottom-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+  }  
+  
+  .bottom-logo {
+    width: 80px;
+    opacity: 0.8;
+  }
+  
+  .legal-links {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .legal-links a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .legal-links a:hover {
+    color: #4a6cf7;
+  }
+  
+  .copyright {
+    color: white;
+    font-size: 14px;
+  }
+  
+  /* Dynamic Year */
+  #current-year {
+    display: inline-block;
+  }
+
+  /* Responsive */
+@media (max-width: 992px) {
+    .footer-grid {
+      flex-direction: column;
+      gap: 40px;
+    }
+    
+    .footer-company,
+    .footer-links-container {
+      width: 100%;
+      min-width: auto;
+    }
+    
+    .footer-links-container {
+      justify-content: flex-start;
+      gap: 40px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .footer-links-container {
+      flex-direction: column;
+      gap: 30px;
+    }
+    
+    .footer-links {
+      width: 100%;
+    }
+    
+    .bottom-content {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+    }
+    
+    .legal-links {
+      order: 2;
+    }
+    
+    .copyright {
+      order: 3;
+    }
+  }

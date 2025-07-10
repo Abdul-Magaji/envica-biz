@@ -1,0 +1,185 @@
+/* Services Section Styles */
+.services-section {
+    padding: 100px 0;
+    background: #fff;
+  }
+  
+  /* Top Section */
+  .services-header {
+    margin-bottom: 60px;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .header-left {
+    flex: 1;
+  }
+  
+  .header-right {
+    flex: 1;
+  }
+    
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #010535;
+  }
+
+  .section-description {
+    color: #64748b;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  /* Bottom Section - Services Grid */
+  .services-grid {
+    position: relative;
+  }
+  
+  .grid-container {
+    display: grid;
+    width: 100%;
+    height: 50vh;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+  }
+
+  .service-card {
+    position: relative;
+    width: auto;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Specific card backgrounds */
+  .service-card.card1 {
+    background-image: url('../img/membership.webp');
+  }
+  
+  .service-card.card2 {
+    background-image: url('../img/webinar.webp');
+  }
+  
+  .service-card.card3 {
+    background-image: url('../img/events.webp');
+  }
+  
+  .service-card.card4 {
+    background-image: url('../img/campaign.webp');
+  }
+  
+  /* Gradient Overlay */
+  .service-card .overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(41, 84, 183, 0.8), rgba(219, 64, 63, 0.8));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+  }
+
+  .service-card:hover .overlay {
+    opacity: 1;
+  }
+  
+  .service-content {
+    position: relative;
+    z-index: 2;
+    padding: 0px 20px;
+    text-align: left;
+    transition: transform 0.2s ease-in;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+  }
+  
+  /* Only show icon and heading initially */
+  .service-content p {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+  }
+  
+  /* Show everything on hover */
+  .service-card:hover .service-content {
+    transform: translateY(-30px);
+  }
+  
+  .service-card:hover .service-content p {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .service-icon {
+    margin-bottom: 4px;
+  }
+  
+  .service-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .services-section {
+      padding: 60px 20px;
+    }
+
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      
+      gap: 1px;
+    }
+    .service-card {
+      height: 350px;
+    }
+
+    .service-card:hover .service-content,
+    .service-card:active .service-content {
+      transform: translateY(-60px);
+    }
+  
+    .service-content {
+      padding: 20px;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .service-title {
+      font-size: 18px;
+    }
+  
+    .service-content p {
+      display: none; /* prevent overflow on small screens */
+    }
+  }
+  

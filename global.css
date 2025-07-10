@@ -1,0 +1,25 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --transition: all 0.3s ease;
+
+    --text-light: #ffffff;
+    --text-dark: hsl(0, 0%, 40%);
+    --heading-light: #fff;
+    --heading-dark:  hsl(235, 96%, 11%);
+    --my-blue: hsl(222, 63%, 44%);
+    --my-red: hsl(0, 68%, 55%);
+
+    --bg-light: #f8fafc;
+
+    --gradient-one: linear-gradient(to right, #2954B7, #DB403F);
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    background: var(--heading-light);
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased
+}

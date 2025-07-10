@@ -1,0 +1,133 @@
+/* Process Section Styles */
+.process-section {
+    background-image: url('../img/footer-bg.webp');
+    background-size: cover;        
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 100px 0;
+  }
+  
+  .process-content {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+  }
+  
+  .process-steps {
+    flex: 1;
+  }
+  
+  .process-header {
+    margin-bottom: 50px;
+  }
+
+  .custom-li-light {
+    color: rgb(254, 254, 254); /* text color */
+  }
+
+  .custom-li-light::marker {
+    color: #DB403F; /* bullet color */
+    width: 100px;
+    height: 100px;
+  }
+
+  .section-title-light {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .section-tag {
+    display: inline-block;
+    color: #4a6cf7;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  
+  .steps-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .process-step {
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+    transition: all 0.3s ease;
+  }
+  
+  .step-icon {
+    width: 50px;
+    height: 50px;
+    background: #4a6cf7;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    flex-shrink: 0;
+  }
+  
+  .step-content {
+    flex: 1;
+    gap: 20px;
+  }
+  
+  .step-title {
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+  
+  .step-description {
+    color: #fff;
+    font-size: 1em;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+  
+  .process-image {
+    flex: 1;
+  }
+  
+  .process-image img {
+    height: auto;
+    width: 100%;
+  }
+  
+  /* Responsive */
+  @media (max-width: 992px) {
+    .process-content {
+      flex-direction: column;
+    }
+    
+    .process-image {
+      order: -1;
+      width: 100%;
+      max-width: 500px;
+      margin-bottom: 40px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .process-step {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+    
+    .step-icon {
+      margin-bottom: 15px;
+    }
+  }

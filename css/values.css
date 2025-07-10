@@ -1,0 +1,103 @@
+/* Core Values Section */
+.core-values {
+    padding: 100px 0;
+    background: #f9f9f9;
+  }
+  .value-container {
+    max-width: 100%;
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 100px 0;
+
+    align-items: flex-start;
+
+  }
+  
+  .section-header {
+    max-width: 30%;
+    text-align: left;           /* Aligns text to the left */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    /* Aligns all items to the left if using flex */
+    gap: 10px;
+
+    position: sticky;
+    top: 160px;
+    z-index: 20;
+  }
+  
+  /* Values Grid (2×3 layout) */
+  .values-grid {
+    max-width: 40%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+  
+  .value-card {
+    padding: 20px 20px;
+    gap: 10px;
+    transition: all 0.4s ease;
+  
+    display: flex;
+    flex-direction: column;
+  
+    align-items: flex-start;   /* aligns content (icons, text blocks) to the left */
+    text-align: left;          /* aligns inline text to the left */
+  }
+  
+  .value-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #010535;
+    position: relative;
+  }
+  
+  .value-description {
+    color: #000000c9;
+    font-size: 0.9em;
+    line-height: 1.6;
+  }
+  
+  /* Responsive */
+  @media (max-width: 992px) {
+    .core-values {
+      padding: 60px 20px;
+    }
+  
+    .value-container {
+      flex-direction: column;
+      padding: 40px 0;
+      gap: 60px;
+    }
+  
+    .section-header {
+      max-width: 100%;
+      position: static;
+      text-align: 0;
+      align-items: 0;
+    }
+  
+    .values-grid {
+      max-width: 100%;
+      grid-template-columns: 1fr;
+      gap: 30px;
+      padding: 0 10px;
+    }
+  
+    .value-card {
+      padding: 15px 10px;
+    }
+  
+    .value-title {
+      font-size: 1rem;
+    }
+  
+    .value-description {
+      font-size: 0.85em;
+    }
+  }
+  
