@@ -115,7 +115,7 @@ height: 2px;
 background: #4a6cf7;
 }
 
-.cta-button-primary {
+.cta-button-primary, .cta-button-nav {
 background: linear-gradient(to right, #2954B7, #DB403F);
 background-size: 120% 100%;
 background-position: left;
@@ -130,6 +130,10 @@ text-decoration: none;
 
 .cta-button-primary:hover {
 background-position: right; /* makes the gradient slide */
+}
+
+.cta-button-nav:hover {
+  background-position: right; /* makes the gradient slide */
 }
 
 .cta-button-secondary {
@@ -206,7 +210,7 @@ color: #010535;
       padding: 10px 0;
     }
   
-    .cta-button-primary {
+    .cta-button-nav {
       display: none; /* hide top right button in mobile nav */
     }
   }

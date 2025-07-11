@@ -48,7 +48,7 @@
     display: grid;
     width: 100%;
     height: 50vh;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 1px;
   }
 
@@ -80,6 +80,10 @@
   
   .service-card.card4 {
     background-image: url('../img/campaign.webp');
+  }
+
+  .service-card.card5 {
+    background-image: url('../img/Communities.webp');
   }
   
   /* Gradient Overlay */
