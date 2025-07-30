@@ -171,6 +171,32 @@
     font-weight: 600;
     color: #010535;
   }
+
+  .credentials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    padding: 80px;
+    gap: 40px;
+  }
+
+  .credentials-description{
+    text-align: center;
+  }
+
+  .credentials-grid {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+  }
+
+  .credentials-grid img {
+    width: 80px;
+    height: 80px;
+  }
   
   /* Responsive */
   @media (max-width: 992px) {
@@ -190,5 +216,14 @@
     .quote-badge {
       left: 50%;
       transform: translateX(-50%) rotate(-15deg);
+    }
+
+    .credentials {
+      padding: 20px;
+    }
+
+    .credentials-grid img {
+      width: 60px;
+      height: 60px;
     }
   }
