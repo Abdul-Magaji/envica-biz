@@ -68,6 +68,12 @@ html {
   align-items: flex-start;
 }
 
+.welcome-container {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  height: fit-content;
+}
 
 /* ===== SECTION STYLES ===== */
 .section {
