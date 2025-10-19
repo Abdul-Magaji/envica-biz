@@ -598,6 +598,12 @@
 
   <script src="main.js"></script>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.landbot.io/landbot-3/landbot-3.0.0.js"></script>
+  <script>
+    var myLandbot = new Landbot.Livechat({
+      configUrl: 'https://storage.googleapis.com/landbot.site/v3/H-3187191-UTJ2AQEPYEM78CHQ/index.json',
+    });
+  </script>
   <script>
     AOS.init({
       duration: 800, // animation duration (ms)
@@ -615,5 +621,6 @@
       navLinks.style.display = isExpanded ? 'none' : 'flex';
     });
   </script>
+  
 </body>
 </html>
