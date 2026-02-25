@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="navbar.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/services.css">
-  <link rel="stylesheet" href="css/aboutus.css">
+  <link rel="stylesheet" href="css/aboutsection.css">
   <link rel="styLesheet" href="css/howwework.css">
   <link rel="styLesheet" href="css/approach.css">
   <link rel="styLesheet" href="css/values.css">
@@ -22,62 +22,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const toggleBtn = document.querySelector('.mobile-menu-toggle');
-      const navLinks = document.querySelector('.nav-links');
-  
-      toggleBtn.addEventListener('click', function () {
-        navLinks.classList.toggle('active');
-        const expanded = toggleBtn.getAttribute('aria-expanded') === 'true';
-        toggleBtn.setAttribute('aria-expanded', !expanded);
-      });
-    });
-  </script>
-  
-  <!-- Notification Banner -->
-  <div class="banner">
-    <div class="banner-container">
-      <div class="banner-left">
-        <div class="contact-item">
-          <img src="assets/email.svg" alt="Email Icon" width="20" height="20">
-          <a href="mailto:hellooo@envica.biz">hellooo@envica.biz</a>
-        </div>
-        <div class="contact-item">
-          <img src="assets/phone.svg" alt="Phone Icon" width="20" height="20">
-          <a href="tel:+2349157777555">+234 915 7777 555</a>
-        </div>
-      </div>
-
-      <div class="banner-right">
-        <a href="https://www.instagram.com/envica.ltd" target="_blank" aria-label="instagram"><img src="assets/insta.svg" alt="instagram link" width="20" height="20"></a>
-        <a href="https://web.facebook.com/people/ENVICA/61574116547594/?mibextid=LQQJ4d" target="_blank" aria-label="Facebook"><img src="assets/facebook.svg" alt="facebook link" width="20" height="20"></a>
-        <a href="https://linkedin.com/company/yourcompany" target="_blank" aria-label="LinkedIn"><img src="assets/linkedin.svg" alt="linkedin link" width="20" height="20"></a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Header -->
-  <header class="header">
-    <div class="nav-container">
-      <a href="index.html" class="logo">
-        <img src="assets/envica-logo.svg" alt="Envica Logo" width="180">
-      </a>
-
-      <nav class="navbar">
-        <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false">☰</button>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#services">Products</a></li>
-          <li><a href="#process">Solutions</a></li>
-          <li><a href="#about">About</a></li>
-        </ul>
-      </nav>
-
-      <a href="contact.html" class="cta-button-nav">Get Started</a>
-    </div>
-  </header>
+<body>  
+  <div id="site-header"></div>
 
   <!-- Hero Section -->
   <section class="hero">
@@ -97,49 +43,8 @@
     </div>
   </section>
 
-  <!-- About us -->
+  <!-- Credentials -->
   <section id="about" class="about-section">
-    <div class="container">
-        <div class="about-images">
-            <div class="image-frame image-1" data-aos="fade-left" data-aos-delay="200">
-                <img src="img/about-img-1.webp" alt="Team collaborating" loading="lazy">
-            </div>
-            <div class="image-frame image-2" data-aos="fade-left" data-aos-delay="300">
-                <img src="img/about-img-2.webp" alt="Team meeting" loading="lazy">
-            </div>
-        </div>
-
-        <div class="quote-badge">
-            <div class="badge-text">Get a Free Quote</div>
-            <div class="badge-arrow"><img src="assets/arrow.svg" alt="Email Icon" width="42" height="42"></div>
-        </div>
-
-        <div class="about-content">
-            <li class="custom-li" >About Us</li>
-            <h2 class="section-title" data-aos="fade-down">Much More About People, <span class="gradient-text">Ideas & Solutions</span></h2>
-            <p class="section-description" data-aos="fade-up" data-aos-delay="100">
-            At ENVICA, we combine community, technology, and engagement to help you build vibrant ecosystems.
-            </p>
-            <p class="section-description" data-aos="fade-up" data-aos-delay="200">
-            We foster collaboration and human-centered engagement across diverse networks. Whether you're a startup or a government agency, ENVICA scales effortlessly to meet your unique needs.</p>
-
-            <div class="features" data-aos="fade-in">
-                <div class="feature-item">
-                  <div class="feature-icon"><img src="assets/crowd.svg" alt="Arrow Icon" width="50" height="50"></div>
-                  <span>Commitment To Continuous Improvement</span>
-                </div>
-            </div>
-
-            <hr class="divider">
-
-            <div class="experience-cta" data-aos="fade-down">
-                <div class="experience-number">0</div>
-                <div class="experience-text"> Years of our team's working experience</div>
-                <a href="#values" class="cta-button-primary">More About <span></span></a>
-            </div>
-        </div>
-    </div>
-
     <div class="credentials">
       <p class="credentials-description" data-aos="fade-in" data-aos-delay="100">
         Focus on growing and engaging your community while our partner takes care of the security
@@ -153,6 +58,34 @@
       </div>
     </div>
 
+    <div class="container">
+      <div class="about-images">
+        <div class="image-frame image-1" data-aos="fade-left" data-aos-delay="200">
+          <img src="img/about-img-1.webp" alt="Team collaborating" loading="lazy">
+        </div>
+      </div>
+
+      <div class="about-content">
+        <li class="custom-li" >About Us</li>
+
+        <h2 class="section-title" data-aos="fade-down">Much More About People, <span class="gradient-text">Ideas & Solutions</span></h2>
+        <p class="section-description" data-aos="fade-up" data-aos-delay="100">
+        ENVICA is the engagement infrastructure powering Africa's ecosystems. We give <strong>governments, businesses, communities, and diaspora networks</strong> the platforms and tools to stay connected, collaborate, and turn ideas into real outcomes — not just at conferences, but continuously.
+        </p>
+
+        <div class="feature-item" data-aos="fade-in">
+          <div class="feature-icon"><img src="assets/crowd.svg" alt="Arrow Icon" width="50" height="50"></div>
+          <span>Commitment To Continuous Improvement</span>
+        </div>
+
+        <hr class="divider">
+
+        <div class="experience-cta" data-aos="fade-down">
+          <a href="about-us.html" class="cta-button-primary">Learn More About Us<span></span></a>
+          <a href="about-us.html" class="cta-button-two">Join the ecosystem<span></span></a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- our approach mision,vision -->
@@ -506,117 +439,14 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="site-footer">
 
-    <!-- Top Content Section -->
-    <div class="footer-content">
-      <div class="container">
-        <div class="footer-grid">
-          <!-- Left Container - Company Info -->
-          <div class="footer-company">
-            <img src="assets/envicaLogo-white.png" alt="Envica Logo" class="footer-logo">
-            <p class="company-description">
-              Empowering businesses with innovative solutions since 2025.
-            </p>
-            <div class="social-links">
-              <a href="https://www.instagram.com/envica.ltd" target="_blank" aria-label="instagram"><img src="assets/insta.svg" alt="instagram link" width="20" height="20"></a>
-              <a href="https://web.facebook.com/people/ENVICA/61574116547594/?mibextid=LQQJ4d" target="_blank" aria-label="Facebook"><img src="assets/facebook.svg" alt="facebook link" width="20" height="20"></a>
-              <a href="https://linkedin.com/company/yourcompany" target="_blank" aria-label="LinkedIn"><img src="assets/linkedin.svg" alt="linkedin link" width="20" height="20"></a>
-            </div>
-          </div>
-  
-          <!-- Right Container - Two Columns -->
-          <div class="footer-links">
-            <!-- Quick Links Column -->
-            <div class="links-column">
-              <h3 class="footer-heading">Quick Links</h3>
-              <ul>
-                <li><a href="#index">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#values">Core Values</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </div>
-  
-            <!-- Services Column -->
-            <div class="links-column">
-              <h3 class="footer-heading">Services</h3>
-              <ul>
-                <li><a href="#">Memberships</a></li>
-                <li><a href="#">Webinars</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Campaigns</a></li>
-                <li><a href="#">Training Programs</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <!-- Footer via loader -->
+  <div id="site-footer"></div>
 
-    <div class="container"><hr class="footer-divider"></div>
-  
-    <!-- Middle section -->
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="bottom-content">
-          <img src="assets/envicaLogo-white.png" alt="Envica" class="bottom-logo">
-          <div class="legal-links">
-            <a href="termsandcondition-envica.html">Terms and Conditions</a>
-            <a href="envica - Privacy Policy.html">Privacy Policy</a>
-            <a href="trademark-envica.html">Trade Mark</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container"><hr class="footer-divider"></div>
-  
-    <!-- Bottom Footer Links -->
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="bottom-content">
-          <div class="copyright">
-            &copy; <span id="current-year"></span> 2025 ENVICA, LTD. All rights reserved.<br>
-
-          </div>
-
-          <div class="legal-links">
-            <a href="#">Go to top</a>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="main.js"></script>
+  <script src="js/loader.js"></script>
+  <script src="main.js" defer></script>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script src="https://cdn.landbot.io/landbot-3/landbot-3.0.0.js"></script>
-  <script>
-    var myLandbot = new Landbot.Livechat({
-      configUrl: 'https://storage.googleapis.com/landbot.site/v3/H-3187191-UTJ2AQEPYEM78CHQ/index.json',
-    });
-  </script>
-  <script>
-    AOS.init({
-      duration: 800, // animation duration (ms)
-      once: true     // animate only once
-    });
 
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Mobile menu toggle
-    const menuToggle = document.querySelector('.mobile-menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    menuToggle.addEventListener('click', () => {
-      const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
-      menuToggle.setAttribute('aria-expanded', !isExpanded);
-      navLinks.style.display = isExpanded ? 'none' : 'flex';
-    });
-  </script>
-  
 </body>
 </html>

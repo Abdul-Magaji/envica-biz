@@ -1,0 +1,186 @@
+/* ===== General Section Styling ===== */
+section {
+padding: 4rem 1rem;
+}
+
+.container {
+max-width: 100%;
+margin: 0 auto;
+}
+
+/* ===== Hero Section ===== */
+.womanity-hero {
+background: linear-gradient(135deg, #FDE2E2, #FBC2EB);
+color: #222;
+text-align: center;
+padding: 6rem 1rem 4rem;
+border-radius: 12px;
+margin-bottom: 3rem;
+}
+
+.womanity-hero h1 {
+font-size: clamp(2rem, 5vw, 3rem);
+font-weight: 700;
+margin-bottom: 1rem;
+}
+
+.womanity-hero .hero-sub {
+font-size: 1.25rem;
+font-weight: 500;
+margin-bottom: 1rem;
+}
+
+.womanity-hero .hero-text {
+font-size: 1rem;
+max-width: 700px;
+margin: 0 auto;
+line-height: 1.6;
+}
+
+/* ===== Intro Section ===== */
+.womanity-intro h2 {
+font-size: 2rem;
+text-align: center;
+margin-bottom: 1.5rem;
+color: var(--heading-dark);
+}
+
+.womanity-intro p {
+font-size: 1.05rem;
+line-height: 1.7;
+color: var(--text-dark);
+max-width: 800px;
+margin: 0 auto 1rem;
+text-align: center;
+}
+
+/* ===== Pillars Section ===== */
+.womanity-pillars h2 {
+font-size: 2rem;
+text-align: center;
+margin-bottom: 2rem;
+color: var(--heading-dark);
+}
+
+.pillars-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 1.8rem;
+}
+
+.pillar-card {
+background: #fff;
+border-radius: 12px;
+padding: 2rem 1rem;
+text-align: center;
+font-weight: 500;
+box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pillar-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+/* ===== Vision Section ===== */
+.womanity-vision h2 {
+font-size: 2rem;
+text-align: center;
+margin-bottom: 1.5rem;
+color: var(--heading-dark);
+}
+
+.womanity-vision p {
+font-size: 1.05rem;
+line-height: 1.7;
+max-width: 800px;
+margin: 0 auto 1rem;
+text-align: center;
+color: var(--text-dark);
+}
+
+/* ===== Values / Promise Section ===== */
+.womanity-values h2 {
+font-size: 2rem;
+text-align: center;
+margin-bottom: 1.5rem;
+color: var(--heading-dark);
+}
+
+.womanity-values p {
+font-size: 1.05rem;
+line-height: 1.7;
+max-width: 800px;
+margin: 0 auto 1rem;
+text-align: center;
+color: var(--text-dark);
+}
+
+/* ===== CTA Section ===== */
+.womanity-cta {
+background: linear-gradient(135deg, #FFDEE9, #B5FFFC);
+text-align: center;
+padding: 4rem 1rem;
+border-radius: 12px;
+margin-top: 3rem;
+}
+
+.womanity-cta h2 {
+font-size: 2rem;
+margin-bottom: 1rem;
+color: var(--heading-dark);
+}
+
+.womanity-cta p {
+font-size: 1.1rem;
+margin-bottom: 2rem;
+color: var(--text-dark);
+}
+
+.cta-button-primary {
+display: inline-block;
+background: var(--my-blue);
+color: #fff;
+font-weight: 600;
+padding: 0.85rem 2rem;
+border-radius: 50px;
+text-decoration: none;
+transition: all 0.3s ease;
+}
+
+.cta-button-primary:hover {
+background: var(--my-red);
+transform: translateY(-3px);
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 768px) {
+.womanity-hero, .womanity-cta {
+    padding: 4rem 1rem 3rem;
+}
+
+.pillar-card {
+    padding: 1.5rem 1rem;
+}
+}
+
+@media (max-width: 480px) {
+.womanity-hero h1,
+.womanity-intro h2,
+.womanity-pillars h2,
+.womanity-vision h2,
+.womanity-values h2,
+.womanity-cta h2 {
+    font-size: 1.5rem;
+}
+
+.womanity-hero .hero-sub,
+.womanity-hero .hero-text,
+.womanity-intro p,
+.womanity-vision p,
+.womanity-values p,
+.womanity-cta p {
+    font-size: 0.95rem;
+}
+}

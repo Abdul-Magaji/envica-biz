@@ -1,0 +1,265 @@
+body {
+    font-family: 'poppins', sans-serif;
+    background: #fff;
+  }
+
+  button, input[type="submit"] {
+    font-family: inherit;
+  }
+
+  .contact-container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #010535;
+  }
+
+  .custom-li::marker {
+    color: #DB403F; /* bullet color */
+  }
+  
+  .custom-li {
+    color: black; /* text color */
+  }
+  
+  /* Page Title Card Styles */
+  .page-title-card {
+    position: relative;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-image: url('img/contact-img.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .title-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #2954B7, #DB403F, #db3f3f00);
+    opacity: 0.8;
+    z-index: 1;
+  }
+  
+  .page-title-card .container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    padding: 0 20px;
+  }
+  
+  .page-title-card h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 0;
+    animation: fadeInUp 0.8s ease-out;
+  }
+
+  /* Contact Form Section */
+  .contact-form-section {
+    padding: 80px 0;
+    background: #fff;
+  }
+  
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    align-items: center;
+    background-color: #FAFAFB;
+    width: 100%;
+  }
+  
+  /* Form Styles */
+  .form-column {
+    padding: 60px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .name-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .form-group {
+    position: relative;
+  }
+  
+  .form-group label {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    color: #64748b;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 20px 15px 10px;
+    border: none;
+    background-color: #FFF;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #4a6cf7;
+    box-shadow: 0 0 0 2px rgba(74, 108, 247, 0.1);
+  }
+  
+  /* Floating labels effect */
+  .form-group input:focus + label,
+  .form-group input:not(:placeholder-shown) + label,
+  .form-group textarea:focus + label,
+  .form-group textarea:not(:placeholder-shown) + label {
+    top: 8px;
+    font-size: 0.75rem;
+    color: #858585;
+  }
+  
+  .submit-btn {
+    background: linear-gradient(to right, #2954B7, #DB403F);
+    color: white;
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 2s ease;
+    align-self: flex-start;
+  }
+  
+  .submit-btn:hover {
+    background: linear-gradient(to right, #DB403F, #2954B7);
+  }
+  
+  /* Image Column */
+  .image-column {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .image-column img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Responsive */
+  @media (max-width: 992px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .image-column {
+      order: -1;
+      height: 300px;
+    }
+  
+    .form-column {
+      padding: 40px 20px;
+    }
+  
+    .submit-btn {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .name-fields {
+      grid-template-columns: 1fr;
+    }
+    
+    .form-title {
+      font-size: 2rem;
+    }
+
+    .form-column {
+      padding: 20px;
+    }
+  }
+  
+  /* Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .page-title-card {
+      height: 300px;
+    }
+    
+    .page-title-card h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .name-fields {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  
+    .form-column {
+      padding: 30px 15px;
+    }
+  
+    .page-title-card {
+      height: 260px;
+      text-align: left;
+      align-items: flex-end;
+      padding-bottom: 30px;
+    }
+  
+    .page-title-card h1 {
+      font-size: 2.2rem;
+      padding: 0 20px;
+      line-height: 1.2;
+    }
+  
+    .submit-btn {
+      padding: 14px;
+      font-size: 1rem;
+    }
+  }

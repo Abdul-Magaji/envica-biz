@@ -68,3 +68,23 @@ document.addEventListener('DOMContentLoaded', function() {
     // Auto-rotate (optional)
     setInterval(nextCard, 5000);
   });
+
+//Landbot
+var myLandbot = new Landbot.Livechat({
+  configUrl: 'https://storage.googleapis.com/landbot.site/v3/H-3187191-UTJ2AQEPYEM78CHQ/index.json',
+});
+
+//AOS
+
+AOS.init({duration: 800, once: true});
+
+// mobile toggle clean and centralized
+const toggleBtn = document.querySelector('.mobile-menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+toggleBtn.addEventListener('click', () => {
+  navLinks.classList.toggle('active');  // use CSS to show/hide
+
+  const expanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+  toggleBtn.setAttribute('aria-expanded', String(!expanded));
+});

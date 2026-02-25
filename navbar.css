@@ -9,7 +9,7 @@
   
 .banner-container {
     display: flex;
-    flex-direction: column;
+    
     align-items: center;
     padding: 0 5%;
     gap: 8px;
@@ -17,7 +17,7 @@
   
 .banner-left {
     display: flex;
-    flex-direction: column;
+    
     gap: 6px;
     align-items: center;
     width: 100%;
@@ -48,8 +48,9 @@
 
 
 /* ===== HEADER ===== */
-.header {position: sticky;
+.header {
     top: 0;
+    position: sticky;
     background: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 100;
@@ -134,6 +135,18 @@ background-position: right; /* makes the gradient slide */
 
 .cta-button-nav:hover {
   background-position: right; /* makes the gradient slide */
+}
+
+.cta-button-two {
+  font-weight: 400;
+  text-decoration: none;
+  padding: 16px 20px;
+  background: var(--my-blue);
+  color: white;
+}
+
+.cta-button-two:hover {
+  background: #DB403F;
 }
 
 .cta-button-secondary {

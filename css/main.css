@@ -1,0 +1,27 @@
+/* ===== GLOBAL VARIABLES & RESET ===== */
+@import url("../global.css");
+
+/* ===== SITE-WIDE STYLES ===== */
+@import url("styles.css");
+
+/* ===== COMPONENTS ===== */
+@import url("../navbar.css");
+@import url("footer.css");
+
+/* ===== SECTIONS ===== */
+@import url("services.css");
+@import url("aboutsection.css");
+@import url("howwework.css");
+@import url("approach.css");
+@import url("values.css");
+@import url("testimonials.css");
+
+/* ===== PAGES ===== */
+@import url("../contactpage.css");
+@import url("aboutuspage.css");
+@import url("productspage.css");
+@import url("solutionspage.css");
+@import url("communities.css");
+
+/* ===== COMMUNITIES ==== */
+@import url("womanity.css");
